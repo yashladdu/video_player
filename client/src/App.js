@@ -58,7 +58,7 @@ function App() {
   })
 
   useEffect(() => {
-    fetch("http://localhost:8800")
+    fetch("https://video-segments-service.onrender.com")
     .then((res) => res.json())
     .then((data) => setMessage(data.message))
   }, []);
