@@ -1,0 +1,45 @@
+.video-js {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.chapter-bar {
+  position: absolute;
+  bottom: 0;
+  top: 0; /* Adjust the distance from the bottom of the seek bar */
+  height: 100%; /* Adjust the height of the chapter marker */
+  border-radius: 5px; /* Round the corners to create a rectangle */
+  background-color: #111111; /* Customize the color of the chapter marker */
+  pointer-events: none; /* Prevent chapter markers from intercepting clicks */
+  z-index: 1; /* Ensure chapter markers are visible above the progress bar */
+  opacity: 0.7; /* Reduce the opacity of the markers to make them less prominent */
+  font-size: 0;
+}
+
+.chapter-bar.active {
+  background-color: #0e9b63; /* Customize the color of the active chapter marker */
+  opacity: 1; /* Reset the opacity for the active marker to make it more visible */
+}
+ 
+.custom-chapters {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapter-button {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chapter-button:hover {
+  background-color: #ccc;
+}
+
